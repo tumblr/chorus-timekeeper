@@ -45,20 +45,20 @@ class FakeTimeKeeper extends TimeKeeper
     /**
      * FakeTimeKeeper constructor.
      *
-     * @param float $current_unix_time Optional unix time to mock time() and microtime(true)
+     * @param float|int $current_unix_time Optional unix time to mock time() and microtime(true)
      */
-    public function __construct(float $current_unix_time = 0.0)
+    public function __construct($current_unix_time = 0.0)
     {
         $this->setCurrentUnixTime($current_unix_time);
     }
 
     /**
-     * @param float $current_unix_time Current unix timestamp (int seconds) to mimic
+     * @param float|int $current_unix_time Current unix timestamp (int seconds) to mimic
      */
-    public function setCurrentUnixTime(float $current_unix_time): void
+    public function setCurrentUnixTime($current_unix_time): void
     {
         $this->current_unix_time = (int) $current_unix_time;
-        $this->current_unix_time_float = $current_unix_time;
+        $this->current_unix_time_float = (float) $current_unix_time;
         $this->current_microsecond_time = (int) ($current_unix_time * self::MICROSECONDS_PER_SECOND);
     }
 
