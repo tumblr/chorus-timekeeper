@@ -1,0 +1,38 @@
+{
+    "name": "tumblr/chorus-timekeeper",
+    "description": "A super simple class for DI with timekeeping",
+    "license": "GPL-2.0-or-later",
+    "type": "library",
+    "require": {
+        "php": "^7.4 || ^8.0"
+    },
+    "require-dev": {
+        "ergebnis/composer-normalize": "^2.8",
+        "friendsofphp/php-cs-fixer": "^3.17",
+        "infection/infection": ">=0.10.5",
+        "phan/phan": ">=1.1",
+        "phpstan/phpstan": ">=0.10",
+        "phpunit/phpunit": "^9.4",
+        "symfony/phpunit-bridge": "^6.3",
+        "vimeo/psalm": ">=2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tumblr\\Chorus\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tumblr\\Tests\\Chorus\\": "tests/"
+        }
+    },
+    "config": {
+        "allow-plugins": true,
+        "sort-packages": true
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-main": "v0.1.x-dev"
+        }
+    }
+}
