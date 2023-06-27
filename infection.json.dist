@@ -1,0 +1,14 @@
+{
+    "$schema": "vendor/infection/infection/resources/schema.json",
+    "source": {
+        "directories": [
+            "lib"
+        ]
+    },
+   "logs": {
+       "perMutator": "per-mutator.md"
+    },
+    "mutators": {
+        "MethodCallRemoval": true
+    }
+}
