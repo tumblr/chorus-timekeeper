@@ -2,13 +2,10 @@
     "$schema": "vendor/infection/infection/resources/schema.json",
     "source": {
         "directories": [
-            "lib"
+            "src"
         ]
     },
-   "logs": {
-       "perMutator": "per-mutator.md"
-    },
     "mutators": {
-        "MethodCallRemoval": true
+        "@default": true
     }
 }

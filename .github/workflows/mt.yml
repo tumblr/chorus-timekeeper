@@ -45,4 +45,4 @@ jobs:
 
       - name: Run Infection
         run: |
-          vendor/bin/infection --threads=$(nproc) --show-mutations --no-interaction --only-covered
+          make mt SILENT=
