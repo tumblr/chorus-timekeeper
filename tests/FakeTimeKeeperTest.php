@@ -67,4 +67,24 @@ class FakeTimeKeeperTest extends TestCase
 
         $this->assertLessThan(1.0, microtime(true) - $time_start);
     }
+
+    /**
+     * Test default arguments
+     */
+    public function testDefault(): void
+    {
+        $time_keeper = new Chorus\FakeTimeKeeper();
+        $this->assertSame(0, $time_keeper->getCurrentUnixTime());
+    }
+
+    /**
+     * Test integer time
+     */
+    public function testIntegerTime(): void
+    {
+        $time_keeper = new Chorus\FakeTimeKeeper();
+        $time_keeper->setCurrentUnixTime(17);
+        $this->assertSame(17, $time_keeper->getCurrentUnixTime());
+        $this->assertSame(17.0, $time_keeper->getCurrentTimeAsFloat());
+    }
 }
