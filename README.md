@@ -36,6 +36,8 @@ echo $fakeTimeKeeper->getCurrentUnixTime();  // Outputs 1628700000.
 
 ```
 
+## Development Workflow
+
 The project has a Makefile to simplify development processes. You can use various make commands to run tests, validate code standards, and more. Here's a quick overview:
 
 ### 1. Prerequisites Setup
