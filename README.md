@@ -20,7 +20,6 @@ You can install the package via Composer:
 composer require tumblr/chorus-timekeeper
 ```
 
-## Development Workflow
 
 ## Basic Usage
 
