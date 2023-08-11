@@ -22,7 +22,7 @@ composer require tumblr/chorus-timekeeper
 
 ## Development Workflow
 
-### Basic Usage
+## Basic Usage
 
 ```php
 // Using the real TimeKeeper
