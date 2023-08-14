@@ -122,4 +122,4 @@ Once your PR is approved, it will be merged, and a new version will be released.
 
 ## License
 
-This project is licensed under the [GNU GENERAL PUBLIC LICENSE](LICENSE).
+This project is licensed under the [GNU General Public License v2.0](LICENSE).
